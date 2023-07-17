@@ -1,0 +1,4 @@
+Average of column 1:
+59.65
+Average of column 2:
+7.05

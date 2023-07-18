@@ -1,9 +1,9 @@
 package rough;
 
 public class SalaryEmployee extends Employee {
-    private double salary;
+    private int salary;
 
-    public SalaryEmployee(String firstName, String lastName, String socialSecurityNumber, double salary) {
+    public SalaryEmployee(String firstName, String lastName, String socialSecurityNumber, int salary) {
         super(firstName, lastName, socialSecurityNumber);
         this.salary = salary;
     }
@@ -12,7 +12,6 @@ public class SalaryEmployee extends Employee {
         return salary;
     }
 
-    @Override
     public double earnings() {
         return salary;
     }

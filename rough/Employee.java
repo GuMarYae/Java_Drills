@@ -12,6 +12,10 @@ public abstract class Employee {
       this.lastName = lastName;
       this.socialSecurityNumber = socialSecurityNumber;
    } 
+   ////////////////
+
+
+   /////////////////
 
    // return first name
    public String getFirstName() {return firstName;}

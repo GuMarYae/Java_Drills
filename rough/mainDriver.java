@@ -2,11 +2,11 @@ package rough;
 
 public class mainDriver {
     public static void main(String[] args) {
-        SalaryEmployee salaryEmployee = new SalaryEmployee("John", "Doe", "123-456-7890", 5000.0);
-        System.out.println(salaryEmployee.toString());
-        System.out.println("Earnings: $" + salaryEmployee.earnings());
+        SalaryEmployee empSalary = new SalaryEmployee("Tony", "Dee", "000000007", 680000);
+        System.out.println(empSalary.toString());
+        System.out.println("Earnings: $" + empSalary.earnings());
 
-        HourlyEmployee hourlyEmployee = new HourlyEmployee("Jane", "Smith", "987-654-3210", 15.0, 40.0);
+        HourlyEmployee hourlyEmployee = new HourlyEmployee("AnotherTony", "NotJunior", "700000000", 15.0, 10005);
         System.out.println(hourlyEmployee.toString());
         System.out.println("Earnings: $" + hourlyEmployee.earnings());
     }

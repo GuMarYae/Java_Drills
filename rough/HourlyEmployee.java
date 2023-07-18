@@ -18,7 +18,7 @@ public class HourlyEmployee extends Employee {
         return hoursWorked;
     }
 
-    @Override
+    //from super
     public double earnings() {
         return hourlyRate * hoursWorked;
     }

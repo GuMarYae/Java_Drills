@@ -34,7 +34,7 @@ public class mainDriver {
 
         // System.out.println(appDaily1[0].getIsImportant());
 
-        // monthly
+        // ⭐ monthly
         MonthlyAppointment appMonth = new MonthlyAppointment(2023, 4, 10, 10, "check bills");
         System.out.println(appMonth.toString());
         System.out.println("on 2002-03-10: " + appMonth.occursOn(2022, 3, 10));
@@ -68,7 +68,7 @@ public class mainDriver {
         int day = scanner.nextInt();
         // Scenner close
         scanner.close();
-        
+
         Appointment appointment = new Appointment(year, month, day, description);
 
         System.out.println("New appointment created:");

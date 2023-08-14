@@ -1,17 +1,35 @@
-import java.math.BigDecimal;
-import java.math.BigInteger;
+import java.awt.Graphics;
+import javax.swing.JComponent;
+import javax.swing.JFrame;
 
-public class test {
-    public static void main(String[] args) {
+public class Test extends JComponent {
+    
+    @Override
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        
+        // Drawing instructions
+        g.drawRect(0, 10, 200, 10); // Example rectangle
+        g.drawRect(0, 30, 300, 10); // Example rectangle
+        g.drawString("Hello, World!", 20, 80); // Example text
+    }
+     public static void main(String[] args) {
+        // Create a new JFrame
+        JFrame frame = new JFrame("My Swing Application");
 
-        BigInteger oneHundred = new BigInteger("1435");
-        BigInteger fiftyMillion = new BigInteger("50004540");
-        System.out.println(oneHundred.multiply(fiftyMillion)); // Prints 5000000000
+        // Create a new instance of your custom component
+        Test customComponent = new Test();
 
-        BigDecimal price = new BigDecimal("4.35");
-        BigDecimal quantity = new BigDecimal("100");
-        BigDecimal total = price.multiply(quantity);
-        System.out.println(total); // Prints 435.00
+        // Add the custom component to the frame's content pane
+        frame.getContentPane().add(customComponent);
+
+        // Set the size of the frame
+        frame.setSize(400, 300);
+
+        // Set the default close operation
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Make the frame visible
+        frame.setVisible(true);
     }
 }
-
